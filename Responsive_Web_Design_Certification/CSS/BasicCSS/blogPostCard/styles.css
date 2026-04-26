@@ -1,0 +1,37 @@
+body {
+    background-color: grey;
+}
+
+.blog-post-card {
+    background-color: white;
+    border-radius: 2px;
+    width: 540px;
+    text-align: center;
+}
+
+.post-img {
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.post-title, .post-excerpt {
+    color: green;
+    margin: 2px;
+}
+
+.post-content {
+    padding: 2px;
+}
+
+.read-more {
+    color: yellow;
+    background-color: aquamarine;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.read-more:hover {
+    background-color: blueviolet;
+}
