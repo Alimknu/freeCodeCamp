@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <label for="name">Enter your Full Name:</label>
+        <input type="text" id="name" />
+        <label for="email">Enter your Email:</label>
+        <input type="email" id="email" />
+
+        <label for="position">Select a position:</label>
+        <select id="position">
+            <option>Hearts</option>
+            <option>Diamonds</option>
+            <option>Clubs</option>
+            <option>Spades</option>
+        </select>
+
+        <fieldset class="radio-group">
+          <legend>Select your Availability</legend>
+          <input type="radio" id="availability-full" name="availability" value="Full-Time" />
+          <label for="availability-full">Full-Time</label>
+          <input type="radio" id="availability-part" name="availability" value="Part-Time" />
+          <label for="availability-part">Part-Time</label>
+        </fieldset>
+
+        <label for="message">Enter a message:</label>
+        <textarea id="message"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
