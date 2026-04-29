@@ -1,0 +1,28 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.color-box {
+    width: 100px;
+    height: 40px;
+}
+
+.color1 {
+    background-color: #f5a9b2;
+}
+
+.color2 {
+    background-color: rgb(28, 28, 28);
+}
+
+.color3 {
+    background-color: aquamarine;
+}
+
+.color4 {
+    background-color: hsl(67, 23%, 12%);
+}
+
+.color5 {
+    background-color: darkkhaki;
+}
