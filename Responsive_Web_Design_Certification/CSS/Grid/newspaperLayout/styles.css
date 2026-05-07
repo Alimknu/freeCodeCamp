@@ -1,0 +1,52 @@
+
+.newspaper-layout {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto 1fr 1fr 1fr;
+	grid-template-areas:
+		"title title title"
+		"feature-article feature-article cover-image"
+		"secondary-article secondary-article cover-image"
+		"small-article1 small-article2 small-article3";
+	gap: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.title {
+	grid-area: title;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.feature-article {
+	grid-area: feature-article;
+}
+
+.small-article1 {
+	grid-area: small-article1;
+}
+
+.small-article2 {
+	grid-area: small-article2;
+}
+
+.small-article3 {
+	grid-area: small-article3;
+}
+
+.secondary-article {
+	grid-area: secondary-article;
+}
+
+.cover-image {
+	grid-area: cover-image;
+	display: block;
+}
+
+.cover-image img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
