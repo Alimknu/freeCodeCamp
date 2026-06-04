@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h2>Weather App</h2>
+    <div id="weather-result" hidden>
+      <img id="weather-icon" src="" alt="" />
+      <div id="main-temperature"></div>
+      <div id="feels-like"></div>
+      <div id="humidity"></div>
+      <div id="wind"></div>
+      <div id="wind-gust"></div>
+      <div id="weather-main"></div>
+      <div id="location"></div>
+    </div>
+
+    <select id="location-select">
+      <option value=""></option>
+      <option value="paris">Paris</option>
+      <option value="london">London</option>
+      <option value="tokyo">Tokyo</option>
+      <option value="los angeles">Los Angeles</option>
+      <option value="chicago">Chicago</option>
+      <option value="new york">New York</option>
+    </select>
+
+    <button id="get-weather-btn">Get Weather</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
