@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="flashcard">
+      <div id="front-text-display"></div>
+      <div id="back-text-display"></div>
+    </div>
+
+    <button id="delete-btn">Delete Card</button>
+    <form id="entry-form">
+      <label class="label" for="front-text"> Question Text </label>
+      <textarea id="front-text"></textarea>
+      <label class="label" for="back-text"> Question Answer </label>
+      <textarea id="back-text"></textarea>
+      <button type="submit" id="add-flashcard">Add Flashcard</button>
+    </form>
+    <script src="index.ts"></script>
+  </body>
+</html>

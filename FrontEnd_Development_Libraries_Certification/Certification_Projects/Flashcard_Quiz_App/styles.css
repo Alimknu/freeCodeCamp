@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+#flashcard {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+
+#front-text-display,
+#back-text-display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.3),
+    0 8px 10px -6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  backface-visibility: hidden;
+}
+
+#front-text-display {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#back-text-display {
+  background: linear-gradient(135deg, #059669, #10b981);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#flashcard.flipped #front-text-display {
+  transform: rotateY(180deg);
+}
+
+#flashcard:not(.flipped) #back-text-display {
+  transform: rotateY(-180deg);
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#delete-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+#delete-btn:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+#add-flashcard {
+  background-color: #3b82f6;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+#add-flashcard:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+#entry-form {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+textarea {
+  font-family: inherit;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  color: #f8fafc;
+  padding: 0.75rem;
+  min-height: 80px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
